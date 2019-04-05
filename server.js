@@ -2,7 +2,7 @@
 var main = require('./routing/main');
 
 //Routing
-var PORT = process.env.PORT || 8013;
+var PORT = process.env.PORT || 8000;
 
 //listen
 main.listen(PORT, function() {

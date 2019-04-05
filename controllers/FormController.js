@@ -24,7 +24,7 @@ class FormController extends ControllerCore {
     var reset = false ;
     var mensaje = [];
     (Is.not.undefined(name) || name !=='' )&& (Is.not.undefined(email) || email !=='' ) && 
-    (Is.not.undefined(phone) || phone !=='' ) && (parseInt(age) >= 18 && parseInt(age) =< 100) ?
+    (Is.not.undefined(phone) || phone !=='' ) && (parseInt(age) >= 18 && parseInt(age) <= 100) ?
     (mensaje.push({"mensaje":"Tu información fue enviada con éxito, estaremos en contacto contigo"}),
       reset = true ) 
     :  
